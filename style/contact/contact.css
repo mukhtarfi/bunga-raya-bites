@@ -1,0 +1,219 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--tertiary-white);
+}
+
+.contact__headings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--primary-black);
+  color: var(--tertiary-white);
+  padding: 15px;
+}
+
+.contact__headings > h1 {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: lighter;
+  font-size: xx-large;
+}
+
+.contact__headings__underline {
+  display: block;
+  width: 80%;
+  height: 5px;
+  margin: 0 auto;
+  background-color: var(--tertiary-white);
+}
+
+.contact__headings > p {
+  padding: 12px 40px;
+  font-weight: lighter;
+}
+
+/* second segment */
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--tertiary-white);
+  background-color: var(--secondary-green);
+}
+
+.contact__infobox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 14px;
+  border: 2px solid var(--tertiary-white);
+  border-radius: 20px;
+  width: 80%;
+  height: 120px;
+  padding: 0.3em;
+}
+
+.contact__infobox > h3 {
+  font-weight: 1200;
+  font-size: var(--text-xl);
+  color: var(--primary-black);
+}
+
+.contact__infobox > p {
+  font-size: var(--text-lg);
+  font-weight: bold;
+}
+
+/* third segment */
+
+.contact__message__box {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--tertiary-white);
+  color: var(--primary-black);
+}
+
+/* fill in the blanks part */
+.message__box__item {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+
+.message__box__item > label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* comment part */
+.message__box__item > textarea, .message__box__item > input, .message__box__item > select {
+  font-family:'Josefin Sans', sans-serif;
+  font-size: 12px;
+  margin-bottom: 8px;
+  border: none;
+  border-bottom: 1px solid #b1b1b1;
+  outline: none;
+  padding: 0.5em;
+  font-weight: 600;
+  background-color: var(--tertiary-white);
+}
+
+.message__box__item > textarea {
+  border: 1px solid #b1b1b1;
+  resize: none;
+}
+
+.message__box__item > textarea::placeholder {
+  padding: 0.5em;
+}
+
+#category {
+  color: var(--black-shade);
+}
+
+#category > option {
+  background-color: var(--tertiary-white);
+  font-size: 12px;
+  margin: 0;
+  padding-top: 0;
+}
+
+/* for fill text form */
+.message__box__item > input::placeholder {
+  color: var(--black-shade);
+}
+
+.message__box__submit {
+  text-align: center;
+}
+
+.message__box__submit > input[type="submit"] {
+  color: var(--tertiary-white);
+  background-color: var(--secondary-green);
+  border: 2px solid var(--tertiary-white);
+  padding: 12px 24px;
+  margin: 0 0 0.8em 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  width: 92%;
+}
+
+.message__box__submit > input[type="submit"]:hover,
+.message__box__submit > input[type="submit"]:focus {
+  background-color: var(--tertiary-white);
+  border: 2px solid var(--primary-black);
+}
+
+@media (min-width: 680px) {
+
+  .contact__headings {
+    height: 160px;
+  }
+
+  .contact__headings > * {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .contact__info {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact__infobox {
+    width: 25%;
+  }
+
+  .contact__message_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .message__box__item {
+    width: 80%;
+  }
+
+  .message__box__submit {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+}
+
+@media (min-width: 1024px) {
+
+  .contact__message_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .message__box__item {
+    width: 60%;
+  }
+  
+  .contact__info > p {
+    font-size: var(--text-3xl);
+  }
+  
+  .contact__info > h3 {
+    font-size: var(--text-xl);
+  }
+}

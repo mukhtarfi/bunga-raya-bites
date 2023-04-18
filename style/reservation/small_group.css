@@ -1,0 +1,203 @@
+.small__group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    margin-bottom: 5rem;
+    display: none;
+}
+
+/* wording section */
+.wording__book, .wording__availability, .wording__selection {
+    color: var(--tertiary-white);
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.wording__book {
+    font-size: var(--text-5xl);
+    font-style: italic;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 5px solid var(--tertiary-white);
+}
+
+.wording__availability, .wording__selection {
+    font-size: var(--text-3xl);
+}
+
+.wording__selection {
+    margin: 2rem 0;
+}
+
+.tableview__category {
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.view__selection {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.view__indoor, .view__outdoor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px var(--tertiary-white);
+}
+
+.indoor__image, .outdoor__image {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.indoor__image img, .outdoor__image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 0px 0px 15px 0px var(--secondary-green);
+}
+
+/* view wording section */
+.view__indoor h4, .view__indoor p, .view__outdoor h4, .view__outdoor p {
+    color: var(--secondary-green);
+    z-index: 50;
+}
+
+.view__indoor h4, .view__outdoor h4 {
+    font-size: var(--text-4xl);
+}
+
+.view__indoor p, .view__outdoor p {
+    font-size: var(--text-2xl);
+}
+
+/* availability checking */
+.availability__checking {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+/* reservation details - small group */
+.smallreservation__details {
+    width: 100%;
+    margin: 2rem 0;
+    padding: 0rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.details__name, .details__contact, .details__date, .details__time, .details__guestcount {
+    color: var(--secondary-green);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: var(--text-xl);
+}
+
+input::placeholder {
+    color: var(--tertiary-white);
+}
+
+.details__date input, .details__contact input, .details__name input {
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+input {
+    font-size: var(--text-xl);
+    color: var(--tertiary-white);
+    background-color: var(--primary-black);
+    border: 3px solid var(--secondary-green);
+    border-radius: 0.3rem;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-color: var(--tertiary-white);
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+select {
+    font-size: var(--text-xl);
+    background-color: var(--primary-black);
+    color: var(--tertiary-white);
+    border: 3px solid var(--secondary-green);
+    height: 2.5rem;
+    border-radius: 0.3rem;
+}
+
+#startselection, #partysize {
+    display:  none;
+}
+
+option {
+    background-color: var(--primary-black);
+    font-size: var(--text-2xl);
+}
+
+.btn__submit {
+    padding: 1.5rem 2rem;
+    font-size: var(--text-xl);
+    border-radius: 10px;
+    margin: 2rem 0 5rem;
+    background-color: var(--secondary-green);
+    border: none;
+    box-shadow: inset 0px 0px 5px 2px var(--tertiary-white);
+    align-self: center;
+}
+
+.btn__submit:hover {
+    background-color: var(--tertiary-white);
+    box-shadow: inset 0px 0px 5px 2px var(--secondary-green);
+}
+
+/* tablet view */
+@media (max-width: 768px) {
+    .wording__book, .wording__availability, .wording__selection {
+        text-align: center;
+    }
+
+    /* table view - outdoor & indoor */
+    .view__selection {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .view__indoor, .view__outdoor {
+        width: 90%;
+    }
+
+    .view__indoor {
+        margin-bottom: 4rem;
+    }
+}
+
+/* mobile view */
+@media (max-width: 680px) {
+    .wording__book {
+        font-size: var(--text-3xl);
+    }
+
+    .wording__availability, .wording__selection {
+        font-size: var(--text-xl);
+    }
+}

@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bunga Raya Bites : Malaysian Cuisine</title>
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" href="style/indexdisplay.css">
+  <link rel="stylesheet" href="style/navigation panel/navigation.css">
+  <link rel="stylesheet" href="style/hero/hero.css">
+  <link rel="stylesheet" href="style/membership/membership.css">
+  <link rel="stylesheet" href="style/reservation/reservation.css" />
+  <link rel="stylesheet" href="style/reservation/small_group.css" />
+  <link rel="stylesheet" href="style/reservation/large_group.css" />
+  <link rel="stylesheet" href="style/contact/contact.css">
+  <link rel="stylesheet" href="style/menu/food-menu.css">
+</head>
+
+<body>
+  <!-- navigation panel container -->
+  <header class="header">
+    <div class="navigation__panel">
+      <!-- website logo -->
+      <div class="logo__container">
+        <img class="logo__icon" id="logo" src="asset/navigation panel/Bunga-Raya-Bites-Logo-SVG.svg"
+          alt="bunga raya bites logo" />
+      </div>
+
+      <!-- mobile view toggle box -->
+      <input type="checkbox" id="toggle" />
+
+      <!-- navigation panel items -->
+      <nav class="navpanel__container">
+        <ul class="nav__links">
+          <li class="link__item">
+            <a class="underline" id="menu_clicker" href="#">Menus</a>
+          </li>
+          <li class="link__item">
+            <a class="underline" id="reservation_clicker" href="#">Make A Reservation</a>
+          </li>
+          <li class="link__item">
+            <a class="underline" id="contact_clicker" href="#contact">Contact</a>
+          </li>
+          <li class="link__item">
+            <a class="underline" id="membership_clicker" href="#membership_tile">Membership</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- mobile view toggle icon -->
+      <label class="navbar__toggle" for="toggle">
+        <svg class="burger__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+        </svg>
+        <svg class="xmark__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </label>
+    </div>
+  </header>
+
+  <main class="webpage__content">
+
+    <section class="hero__section" id="hero_section">
+      <div class="img__slider">
+        <div class="slide active">
+          <img src="asset/hero/hero1.jpg" alt="hero1">
+          <div class="info">
+            <h2>Authentic Malaysian Cuisine</h2>
+            <p>Utilizing vigorously tested recipes for traditional food</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="asset/hero/hero2.jpg" alt="hero2">
+          <div class="info">
+            <h2>No Long Queues</h2>
+            <p>Reserve a table now with any pax size</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="asset/hero/hero3.jpg" alt="hero3">
+          <div class="info">
+            <h2>Be Our Member</h2>
+            <p>Fresh Deals & New Thursday Specials</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="asset/hero/hero4.jpg" alt="hero4">
+          <div class="info">
+            <h2>Get In Touch</h2>
+            <p>We'd Love to Hear From You</p>
+          </div>
+        </div>
+        <div class="navigation">
+          <div class="btn"></div>
+          <div class="btn"></div>
+          <div class="btn"></div>
+          <div class="btn"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu__section" id="menu">
+      <div class="menu__container">
+        <!-- menu by category -->
+        <div class="food_category">
+          <!-- malay cuisine -->
+          <div class="food__cuisine" id="malay__cuisine">
+            <div class="food__header">
+              <p>Malay Cuisine</p>
+              <img src="https://littlefatduck.com/wp-content/uploads/2019/06/divider-free-img.png" alt="header divider">
+            </div>
+
+            <!-- list of food -->
+            <ul class="food__list">
+              <li>
+                <div class="image__container">
+                  <img class="food__image"
+                    src="https://www.ajinomoto.com.my/sites/default/files/content/recipe-attach/2022-07/Nasi%20lemak%20-%20new_0.png"
+                    alt="nasi lemak">
+                </div>
+                <div class="food__info">
+                  <p class="food__name">Nasi Lemak</p>
+                  <p class="food__description">
+                    Nasi lemak consists of fragrant rice cooked in coconut milk and pandan leaf. Serve with a hot spicy
+                    sauce, fresh cucumber slices, small fried anchovies, roasted peanuts and hard-boiled egg.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="image__container">
+                  <img class="food__image" src="https://i.ytimg.com/vi/OhFUjXAbLck/maxresdefault.jpg" alt="mee bandung">
+                </div>
+                <div class="food__info">
+                  <p class="food__name">Mee Bandung</p>
+                  <p class="food__description">
+                    A cusine that is originally cooked with yellow noodles coupled with prawn and egg in addition to a
+                    thick broth-gravy made of a combination of dried shrimps, onion, spices, shrimp paste and chilies.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="image__container">
+                  <img class="food__image"
+                    src="https://www.unileverfoodsolutions.com.my/dam/global-ufs/mcos/SEA/calcmenu/recipes/MY-recipes/fish-&-other-seafood-dishes/nasi-dagang-gulai-ikan-tongkol/main-header.jpg"
+                    alt="nasi dagang">
+                </div>
+                <div class="food__info">
+                  <p class="food__name">Nasi Dagang</p>
+                  <p class="food__description">
+                    Nasi dagang is a dish consisting of rice steamed in coconut milk, fish curry and extra ingredients
+                    such as pickled cucumber and carrots.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="image__container">
+                  <img class="food__image"
+                    src="https://img-global.cpcdn.com/recipes/1bf8a8f13af17ec4/1200x630cq70/photo.jpg"
+                    alt="nasi kerabu">
+                </div>
+                <div class="food__info">
+                  <p class="food__name">Nasi Kerabu</p>
+                  <p class="food__description">
+                    A type of rice which is blue in color with dried fish, grilled beef, crackers, pickles and other
+                    salads.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="image__container">
+                  <img class="food__image" src="https://resepichenom.com/media/Asam_Pedas_Melaka_Web.jpg"
+                    alt="asam pedas">
+                </div>
+                <div class="food__info">
+                  <p class="food__name">Asam Pedas</p>
+                  <p class="food__description">
+                    A sour stew of fish, tamarind, chilli, tomatoes, okra and vietnamese coriander.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="image__container">
+                  <img class="food__image"
+                    src="https://www.tasteatlas.com/images/dishes/576460f5d7c04f34bde13783e77b6f64.jpg"
+                    alt="keropok lekor">
+                </div>
+                <div class="food__info">
+                  <p class="food__name">Keropok Lekor</p>
+                  <p class="food__description">
+                    A savoury cake made from a combination of batter and shredded fish. Sliced and fried just before
+                    serving and it is eaten with a special hot sauce.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- chinese cuisine -->
+          <div class="food__cuisine">
+            <div class="food__header">
+              <p>Chinese Cuisine</p>
+              <img src="https://littlefatduck.com/wp-content/uploads/2019/06/divider-free-img.png" alt="header divider">
+            </div>
+
+            <!-- list of food -->
+            <ul class="food__list">
+              <li>
+                <div class="image__container">
+                  <img class="food__image"
+                    src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/154660.jpg"
+                    alt="hainanese chicken rice">
+                </div>
+                <div class="food__info">
+                  <p class="food__name">Hainanese Chicken Rice</p>
+                  <p class="food__description">
+                    A dish of poached chicken and seasoned rice, served with chilli sauce and cucumber granishes.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="image__container">
+                  <img class="food__image"
+                    src="https://www.angsarap.net/wp-content/uploads/2014/12/Penang-Prawn-Mee-Wide.jpg"
+                    alt="hokkien noodles">
+                </div>
+                <div class="food__info">
+                  <p class="food__name">Hokkien Noodles</p>
+                  <p class="food__description">
+                    A noodle soup with yellow rice noodles immersed in a spicy stock made of from prawns and chicken,
+                    garnished with a boiled egg, poached prawns, chopped kangkung and a dollop of sambal.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="image__container">
+                  <img class="food__image"
+                    src="https://christieathome.com/wp-content/uploads/2020/12/Char-Kway-Teow-1-scaled.jpg"
+                    alt="char kway teow">
+                </div>
+                <div class="food__info">
+                  <p class="food__name">Char Kway Teow</p>
+                  <p class="food__description">
+                    A flat rice noodles stir-fried over very high heat with garlic, light and dark soy sauce, chilli
+                    paste, whole prawns, shelled blood cockles, chopped chinese chives, slices of chinese sausage and
+                    bean
+                    sprouts.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="image__container">
+                  <img class="food__image" src="https://cdn.store-assets.com/s/335570/i/13852637.jpeg"
+                    alt="pan noodles">
+                </div>
+                <div class="food__info">
+                  <p class="food__name">Pan Noodles</p>
+                  <p class="food__description">
+                    A handmade noodles served in fish stock type of soup served some meat and fish, dried anchovies,
+                    vegetables and various spices.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="image__container">
+                  <img class="food__image"
+                    src="https://i2.wp.com/seonkyounglongest.com/wp-content/uploads/2018/12/Wonton-Noodle-Soup-2.jpg?fit=1300%2C732&ssl=1"
+                    alt="wonton noodles">
+                </div>
+                <div class="food__info">
+                  <p class="food__name">Wanton Noodles</p>
+                  <p class="food__description">
+                    A dish consists of egg noodles served in a hot broth, garnished with leafy vegetables and wonton
+                    dumplings.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="image__container">
+                  <img class="food__image"
+                    src="https://christieathome.com/wp-content/uploads/2021/06/Cheung-Fun-Chinese-Rice-Rolls-14.jpg"
+                    alt="cheung fun">
+                </div>
+                <div class="food__info">
+                  <p class="food__name">Cheung Fun</p>
+                  <p class="food__description">
+                    A steamed rice roll made from a wide strip of rice noodles, filled with shrimp, beef and vegetables.
+                    Seasoned soy sauce is poured over the dish upon serving.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- indian cuisine -->
+          <div class="food__cuisine">
+            <div class="food__header">
+              <p>Indian Cuisine</p>
+              <img src="https://littlefatduck.com/wp-content/uploads/2019/06/divider-free-img.png" alt="header divider">
+            </div>
+
+            <!-- list of food -->
+            <ul class="food__list">
+              <li>
+                <div class="image__container">
+                  <img class="food__image"
+                    src="https://cdn.britannica.com/35/225835-050-A5CC289A/Indian-one-pot-meal-for-party.jpg"
+                    alt="nasi beriani">
+                </div>
+                <div class="food__info">
+                  <p class="food__name">Biryani</p>
+                  <p class="food__description">
+                    A flavoured rice dish cooked or served with mutton, chicken, vegetable or fish curry.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="image__container">
+                  <img class="food__image"
+                    src="https://media-cdn.tripadvisor.com/media/photo-s/16/f5/0e/0d/fish-head-curry-fish.jpg"
+                    alt="fish head curry">
+                </div>
+                <div class="food__info">
+                  <p class="food__name">Fish Head Curry</p>
+                  <p class="food__description">
+                    The head of a red snapper is stewed in a curry consisting of varying amounts of coconut milk and
+                    tamarind juice with vegetables. with assorted vegetables such as okra and eggplants, served with
+                    white
+                    rice.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="image__container">
+                  <img class="food__image"
+                    src="https://i0.wp.com/thefoodbunny.com/wp-content/uploads/2021/04/20210423_120312.jpg?fit=3154%2C2201"
+                    alt="banana leaf rice">
+                </div>
+                <div class="food__info">
+                  <p class="food__name">Banana Leaf Rice</p>
+                  <p class="food__description">
+                    White rice is served on a banana leaf with an assortment of vegetables, curried meat or fish,
+                    pickles
+                    or papadum.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="image__container">
+                  <img class="food__image" src="https://www.kingarthurbaking.com/sites/default/files/2021-02/naan-3.jpg"
+                    alt="Naan">
+                </div>
+                <div class="food__info">
+                  <p class="food__name">Naan</p>
+                  <p class="food__description">
+                    A leavened, oven-baked flatbread. It is usually eaten with an array of sauces such as chutney and
+                    curries such as dhal curry. A variety of Naan bread include Garlic Naan, Butter Naan, Garlic Butter
+                    Naan, Cheese Naan and Garlic Cheese Naan.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="image__container">
+                  <img class="food__image" src="https://static.toiimg.com/thumb/61203720.cms?width=1200&height=900"
+                    alt="chapati">
+                </div>
+                <div class="food__info">
+                  <p class="food__name">Chapati</p>
+                  <p class="food__description">
+                    A type of North Indian style flatbread. It is made from a dough of atta flour (whole grain durum
+                    wheat), water and salt by rolling the dough out into discs of approximately twelve centimetres in
+                    diameter and browning the discs on both sides on a very hot, dry tava or frying pan with no oil.
+                    Chapatis are usually eaten with vegetable curry dishes, and pieces of the chapati are used to wrap
+                    around and pick up each bite of the cooked dish.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="image__container">
+                  <img class="food__image" src="https://kfoods.com/images1/newrecipeicon/gajar-ka-achar_8629.jpg"
+                    alt="achar">
+                </div>
+                <div class="food__info">
+                  <p class="food__name">Achar</p>
+                  <p class="food__description">
+                    Known as Indian pickles, achar are made from certain individual varieties of vegetables and fruits
+                    that are chopped into small pieces and cooked in edible oils like sesame oil or brine with many
+                    different spices.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reservation__section" id="reservation">
+      <div class="reservation__mainpage">
+        <h3 class="font__header1">Make a Reservation</h3>
+
+        <div class="reservation__container">
+          <!-- How many people / party size customer want to make a reservation. -->
+          <!-- for small group (1-8 guest). for large group (1 to 33+ guest). -->
+          <div class="reservation__category">
+            <div class="category__selection">
+              <div class="category__backgroundimage">
+                <img src="asset/hero/hero2.jpg" alt="table image" />
+              </div>
+
+              <p class="group__selection">
+                <a class="category__title underline" id="small_group_caller">
+                  Small Group
+                </a>
+                <span>Party Size (1 ~ 8 Guest)</span>
+              </p>
+
+              <p class="group__selection">
+                <a class="category__title underline" id="large_group_caller">
+                  Large Group
+                </a>
+                <span>Party Size (8 ~ 33 Guest)</span>
+              </p>
+            </div>
+
+            <!-- CSS => 2 big box show a text "Small/ Large group + description". -->
+
+            <div class="small__group" id="small__group">
+              <h3 class="wording__book">Book a Table</h3>
+              <p class="wording__availability">
+                Check availability & Book Now (Up to 8 Guests)
+              </p>
+              <p class="wording__selection">Choose Your Preferred View</p>
+
+              <!-- Customer can choose which table view they want. -->
+
+              <div class="tableview__category">
+                <div class="view__selection">
+                  <!-- After select, the view will appear (indoor / outdoor). -->
+
+                  <div class="view__indoor">
+                    <div class="indoor__image">
+                      <img src="asset/reservation/public indoor 1-6 person.jpg" alt="public indoor view" />
+                    </div>
+
+                    <h4>Indoor View</h4>
+                    <p>(Up to 6 Guests)</p>
+
+                    <!-- for customer to check the availability -->
+
+                    <div class="availability__checking">
+                      <!-- reservation details -->
+                      <form class="smallreservation__details" action="#">
+                        <div class="details__name">
+                          <label for="guestname">Name</label>
+                          <input type="text" name="guestname" placeholder="Guest Name" required />
+                        </div>
+                        <div class="details__contact">
+                          <label for="contactnumber">Phone contact</label>
+                          <input type="tel" name="contactnumber" required placeholder="Contact Number" />
+                        </div>
+
+                        <!-- show date availability -->
+                        <div class="details__date">
+                          <label class="date__container" for="date">Date</label>
+                          <input id="choosedate" type="date" name="date" id="date" placeholder="test" required />
+                        </div>
+
+                        <!-- show time availability -->
+                        <div class="details__time">
+                          <label for="time">Time</label>
+                          <select name="time" id="time" placeholder="Select Your Time" required>
+                            <option id="startselection" value="select_your_time" selected>Select Your Time</option>
+                            <option value="bookingtime">17:00</option>
+                            <option value="bookingtime">17:15</option>
+                            <option value="bookingtime">17:30</option>
+                            <option value="bookingtime">17:45</option>
+                            <option value="bookingtime">18:00</option>
+                            <option value="bookingtime">18:15</option>
+                            <option value="bookingtime">18:30</option>
+                            <option value="bookingtime">18:45</option>
+                            <option value="bookingtime">19:00</option>
+                            <option value="bookingtime">19:15</option>
+                            <option value="bookingtime">19:30</option>
+                            <option value="bookingtime">19:45</option>
+                            <option value="bookingtime">20:00</option>
+                            <option value="bookingtime">20:15</option>
+                            <option value="bookingtime">20:30</option>
+                            <option value="bookingtime">20:45</option>
+                            <option value="bookingtime">21:00</option>
+                            <option value="bookingtime">21:15</option>
+                            <option value="bookingtime">21:30</option>
+                            <option value="bookingtime">21:45</option>
+                            <option value="bookingtime">22:00</option>
+                            <option value="bookingtime">22:15</option>
+                            <option value="bookingtime">22:30</option>
+                            <option value="bookingtime">22:45</option>
+                            <option value="bookingtime">23:00</option>
+                            <option value="bookingtime">23:15</option>
+                            <option value="bookingtime">23:30</option>
+                            <option value="bookingtime">23:45</option>
+                            <option value="bookingtime">00:00</option>
+                            <option value="bookingtime">00:15</option>
+                            <option value="bookingtime">00:30</option>
+                            <option value="bookingtime">00:45</option>
+                            <option value="bookingtime">01:00</option>
+                            <option value="bookingtime">01:15</option>
+                            <option value="bookingtime">01:30</option>
+                          </select>
+                        </div>
+
+                        <!-- show number of guest -->
+                        <div class="details__guestcount">
+                          <label for="guestcount">Party Size</label>
+                          <select name="guestscount" id="#">
+                            <option id="partysize" value="partysize" selected>No of Guests</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                          </select>
+                        </div>
+                        <input class="btn__submit" type="submit" value="Reserve Now" />
+                      </form>
+                    </div>
+                  </div>
+
+                  <div class="view__outdoor">
+                    <div class="outdoor__image">
+                      <img src="asset/reservation/public outdoor 1-8 person.jpg" alt="public outdoor view" />
+                    </div>
+
+                    <h4>Outdoor View</h4>
+                    <p>(Up to 8 Guests)</p>
+
+                    <!-- for customer to check the availability -->
+
+                    <div class="availability__checking">
+                      <!-- reservation details -->
+                      <form class="smallreservation__details" action="#">
+                        <div class="details__name">
+                          <label for="guestname">Name</label>
+                          <input type="text" name="guestname" placeholder="Guest Name" required />
+                        </div>
+                        <div class="details__contact">
+                          <label for="contactnumber">Phone contact</label>
+                          <input type="tel" name="contactnumber" required placeholder="Contact Number" />
+                        </div>
+
+                        <!-- show date availability -->
+                        <div class="details__date">
+                          <label for="date">Date</label>
+                          <input type="date" name="date" id="#" required />
+                        </div>
+
+                        <!-- show time availability -->
+                        <div class="details__time">
+                          <label for="time">Time</label>
+                          <select name="time" id="time" placeholder="Select Your Time" required>
+                            <option id="startselection" value="select_your_time" selected>Select Your Time</option>
+                            <option value="bookingtime">17:00</option>
+                            <option value="bookingtime">17:15</option>
+                            <option value="bookingtime">17:30</option>
+                            <option value="bookingtime">17:45</option>
+                            <option value="bookingtime">18:00</option>
+                            <option value="bookingtime">18:15</option>
+                            <option value="bookingtime">18:30</option>
+                            <option value="bookingtime">18:45</option>
+                            <option value="bookingtime">19:00</option>
+                            <option value="bookingtime">19:15</option>
+                            <option value="bookingtime">19:30</option>
+                            <option value="bookingtime">19:45</option>
+                            <option value="bookingtime">20:00</option>
+                            <option value="bookingtime">20:15</option>
+                            <option value="bookingtime">20:30</option>
+                            <option value="bookingtime">20:45</option>
+                            <option value="bookingtime">21:00</option>
+                            <option value="bookingtime">21:15</option>
+                            <option value="bookingtime">21:30</option>
+                            <option value="bookingtime">21:45</option>
+                            <option value="bookingtime">22:00</option>
+                            <option value="bookingtime">22:15</option>
+                            <option value="bookingtime">22:30</option>
+                            <option value="bookingtime">22:45</option>
+                            <option value="bookingtime">23:00</option>
+                            <option value="bookingtime">23:15</option>
+                            <option value="bookingtime">23:30</option>
+                            <option value="bookingtime">23:45</option>
+                            <option value="bookingtime">00:00</option>
+                            <option value="bookingtime">00:15</option>
+                            <option value="bookingtime">00:30</option>
+                            <option value="bookingtime">00:45</option>
+                            <option value="bookingtime">01:00</option>
+                            <option value="bookingtime">01:15</option>
+                            <option value="bookingtime">01:30</option>
+                          </select>
+                        </div>
+
+                        <div class="details__guestcount">
+                          <label for="guestcount">Party Size</label>
+                          <select name="guestscount" id="#">
+                            <option id="partysize" value="partysize" selected>No of Guests</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                          </select>
+                        </div>
+                        <input class="btn__submit" type="submit" value="Reserve Now" />
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="large__group" id="large__group">
+              <h3 class="wording__book">Group Bookings</h3>
+              <p class="wording__availability">
+                Check availability & Book Now (Up to 33 Guests)
+              </p>
+              <p class="wording__selection">Send Us An Enquiry</p>
+
+              <!-- view group private room and party size -->
+              <div class="group__view">
+                <!-- for room up to 12 guests -->
+                <div class="view__room01">
+                  <img src="asset/reservation/group private 1-12.jpg" alt="room up to 12 guests" />
+                  <p>Up to 12 Guests</p>
+                </div>
+
+                <!-- for room up to 33 guests -->
+                <div class="view__room02">
+                  <img src="asset/reservation/group private 1-33  person.jpg" alt="room up to 33 guests" />
+                  <p>Up to 33 Guests</p>
+                </div>
+              </div>
+
+              <!-- for customer to check the availability -->
+
+              <div class="largeavailability__checking">
+                <!-- reservation details -->
+                <form class="largereservation__details" action="#">
+                  <div class="details__container">
+                    <div class="basic__details">
+                      <div class="details__name">
+                        <label for="guest name">Name</label>
+                        <input type="text" name="guest name" id="#" placeholder="Guest Name" required />
+                      </div>
+                      <div class="details__contact">
+                        <label for="contact number">Phone contact</label>
+                        <input type="tel" name="contact number" id="#" required placeholder="Contact Number" />
+                      </div>
+                      <div class="details__email">
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" required placeholder="Email Address" />
+                      </div>
+                    </div>
+
+                    <!-- show date availability -->
+                    <div class="time__availability">
+                      <div class="details__date">
+                        <label for="date">Date</label>
+                        <input type="date" name="date" id="#" required />
+                      </div>
+
+                      <!-- show time availability -->
+                      <div class="details__time">
+                        <label for="time">Time</label>
+                        <select name="time" id="time" placeholder="Select Your Time" required>
+                          <option id="startselection" value="select_your_time" selected>Select Your Time</option>
+                          <option value="bookingtime">17:00</option>
+                          <option value="bookingtime">17:15</option>
+                          <option value="bookingtime">17:30</option>
+                          <option value="bookingtime">17:45</option>
+                          <option value="bookingtime">18:00</option>
+                          <option value="bookingtime">18:15</option>
+                          <option value="bookingtime">18:30</option>
+                          <option value="bookingtime">18:45</option>
+                          <option value="bookingtime">19:00</option>
+                          <option value="bookingtime">19:15</option>
+                          <option value="bookingtime">19:30</option>
+                          <option value="bookingtime">19:45</option>
+                          <option value="bookingtime">20:00</option>
+                          <option value="bookingtime">20:15</option>
+                          <option value="bookingtime">20:30</option>
+                          <option value="bookingtime">20:45</option>
+                          <option value="bookingtime">21:00</option>
+                          <option value="bookingtime">21:15</option>
+                          <option value="bookingtime">21:30</option>
+                          <option value="bookingtime">21:45</option>
+                          <option value="bookingtime">22:00</option>
+                          <option value="bookingtime">22:15</option>
+                          <option value="bookingtime">22:30</option>
+                          <option value="bookingtime">22:45</option>
+                          <option value="bookingtime">23:00</option>
+                          <option value="bookingtime">23:15</option>
+                          <option value="bookingtime">23:30</option>
+                          <option value="bookingtime">23:45</option>
+                          <option value="bookingtime">00:00</option>
+                          <option value="bookingtime">00:15</option>
+                          <option value="bookingtime">00:30</option>
+                          <option value="bookingtime">00:45</option>
+                          <option value="bookingtime">01:00</option>
+                          <option value="bookingtime">01:15</option>
+                          <option value="bookingtime">01:30</option>
+                        </select>
+                      </div>
+                      <div class="details__guestcount">
+                        <label for="guestcount">Party Size</label>
+                        <select name="guestscount" id="#">
+                          <option id="partysize" value="partysize" selected>No of Guests</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                          <option value="17">17</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                          <option value="24">24</option>
+                          <option value="25">25</option>
+                          <option value="26">26</option>
+                          <option value="27">27</option>
+                          <option value="28">28</option>
+                          <option value="29">29</option>
+                          <option value="30">30</option>
+                          <option value="31">31</option>
+                          <option value="32">32</option>
+                          <option value="33">33</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <input class="btn__submit" type="submit" name="enquirenow" id="#" value="Enquire Now" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__headings">
+        <h1>Contact</h1>
+        <div class="contact__headings__underline"></div>
+        <p>Send us a message and we’ll get back to you as soon as possible.</p>
+      </div>
+      <div class="contact__info">
+        <div class="contact__infobox">
+          <h3>Cartering</h3>
+          <p>Let us bring the flavors to you with our customizable catering options.</p>
+        </div>
+        <div class="contact__infobox">
+          <h3>Location</h3>
+          <p>Find us in the heart of the city with easy access and parking.</p>
+        </div>
+        <div class="contact__infobox">
+          <h3>Hiring</h3>
+          <p>Join our team and grow your career in the culinary industry.</p>
+        </div>
+      </div>
+      <div class="contact__message_box">
+        <div class="message__box__item">
+          <label for="name">Your Name</label>
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="message__box__item">
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="message__box__item">
+          <label for="phone">Contact Number</label>
+          <input type="tel" name="phone" placeholder="Contact No." required>
+        </div>
+        <div class="message__box__item">
+          <label for="category">Category</label>
+          <select name="category" id="category" aria-required="true">
+            <option id="select__option" value="please select" disabled selected>Please Select</option>
+            <option value="catering">Catering</option>
+            <option value="feedback">Feedback</option>
+            <option value="job-application">Job Application</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+        <div class="message__box__item">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="40" rows="10" placeholder="Type your message" required></textarea>
+        </div>
+        <div class="message__box__submit">
+          <input type="submit" value="submit">
+        </div>
+      </div>
+    </section>
+
+    <section class="membership">
+      <!-- Membership panel -->
+      <div class="membership__panel" id="membership__panel">
+        <div class="membership__header">
+          <h3>Hello!</h3>
+          <h4>Use your email or other services to continue with Bunga Raya Bites.</h4>
+        </div>
+        <div class="membership__options">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google"
+              viewBox="0 0 16 16">
+              <path
+                d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+            </svg>
+            <p>Continue with Google</p>
+          </button>
+        </div>
+        <div class="membership__options">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple"
+              viewBox="0 0 16 16">
+              <path
+                d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+            </svg>
+            <p>Continue with Apple</p>
+          </button>
+        </div>
+        <div class="membership__options">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-envelope-fill" viewBox="0 0 16 16">
+              <path
+                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+            </svg>
+            <p>Continue with Email</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="javascript/hero.js"></script>
+    <script src="javascript/reservation.js"></script>
+    <script src="javascript/indexdisplay.js"></script>
+  </main>
+
+  <footer class="footer_container"></footer>
+</body>
+
+</html>

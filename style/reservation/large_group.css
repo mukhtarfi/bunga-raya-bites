@@ -1,0 +1,147 @@
+.large__group {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 2rem;
+    margin-bottom: 5rem;
+    display: none;
+}
+
+.wording__book, .wording__availability, .wording__selection {
+    color: var(--tertiary-white);
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.wording__book {
+    font-size: var(--text-5xl);
+    font-style: italic;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 5px solid var(--tertiary-white);
+}
+
+.wording__availability, .wording__selection {
+    font-size: var(--text-3xl);
+}
+
+.wording__selection {
+    margin: 2rem 0;
+    font-style: italic;
+    padding-bottom: 1rem;
+    border-bottom: 5px solid var(--tertiary-white);
+}
+
+/* view group private room and party size */
+.group__view {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.view__room01, .view__room02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.view__room01 img, .view__room02 img {
+    height: 100%;
+    width: 85%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px var(--tertiary-white);
+}
+
+.view__room01 p, .view__room02 p {
+    color: var(--secondary-green);
+    font-size: var(--text-3xl);
+    font-weight: 600;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.largeavailability__checking {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.largereservation__details {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px 10%;
+}
+
+.details__container {
+    display: flex;
+    width: 100%;
+    gap: 5%;
+    margin: 2rem 0;
+}
+
+.details__email {
+    color: var(--secondary-green);
+    font-size: var(--text-xl);
+}
+
+.details__email input {
+  height: 2.5rem;
+  margin-top: 10px;
+}
+
+.details__container input {
+    width: 100%;
+}
+
+.basic__details, .time__availability {
+    width: 100%;
+}
+
+/* mobile view */
+@media (max-width: 680px) {
+    .group__view {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin: 2rem 0 0;
+        gap: 3rem;
+    }
+
+    .view__room01 p, .view__room02 p {
+        font-size: var(--text-2xl);
+        border-bottom: 2px solid var(--tertiary-white);
+        padding: 0  1rem 1rem;
+    }
+
+    /* reservation details */
+    .details__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .basic__details {
+        margin-bottom: 1rem;
+    }
+
+    .details__name, .details__contact, .details__email, .details__date,
+    .details__time, .details__guestcount
+    {
+        font-size: var(--text-2xl);
+        font-weight: 600;
+    }
+
+    .details__container input, .details__guestcount select
+    {
+        font-size: var(--text-2xl);
+    }
+}

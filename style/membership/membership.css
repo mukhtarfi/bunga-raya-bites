@@ -1,0 +1,152 @@
+/* Membership Panel Part */
+
+.membership > * {
+  z-index: 50;
+}
+
+.membership__panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid var(--quaternary-lily);
+  border-radius: 10px;
+  position: fixed;
+  left: 10%;
+  top: 30%;
+  padding: 1rem;
+  background-color: var(--tertiary-white);
+  margin: 0 auto;
+}
+
+.membership__header h3 {
+  font-size: var(--text-3xl);
+  text-align: center;
+  padding: 10px 0;
+  color: var(--primary-black);
+}
+
+.membership__header h4 {
+  font-size: var(--text-sm);
+  text-align: center;
+  padding: 0px 15px 5px 15px;
+  color: var(--black-shade);
+}
+
+.membership__options {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+  padding: 5px;
+}
+
+.membership__options button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  background-color: var(--quaternary-lily);
+  border: 3px solid var(--black-shade);
+  border-radius: 4px;
+}
+
+.membership__options button svg {
+  width: 20%;
+}
+
+.membership__options button p {
+  font-size: var(--text-sm);
+  text-align: left;
+  font-weight: bold;
+  width: 80%;
+}
+
+.membership__options button:hover {
+  color: var(--tertiary-white);
+  background-color: var(--secondary-green);
+}
+
+body{
+ background-color: rgb(220,220,220, 0.8) ;
+}
+
+.membership__panel {
+  display: none;
+}
+
+/* Slightly larger phone */
+@media (min-width: 425px) {
+  .membership__panel {
+    width: 70%;
+    left: 15%;
+  }
+}
+
+/* Tablet view */
+
+@media (min-width: 768px) {
+  .membership__panel {
+    width: 50%;
+    left: 25%;
+  }
+
+  .membership__header h3 {
+    font-size: var(--text-4xl);
+  }
+
+  .membership__header h4 {
+    font-size: var(--text-base);
+  }
+}
+
+@media (min-wdith: 860px) {
+  .membership__options{
+    width: 60%;
+  }
+}
+
+/* laptop view */
+
+@media (min-width: 1024px) {
+  
+  .membership__panel {
+    width: 50%;
+  }
+
+  .membership__header h3 {
+    font-size: var(--text-5xl);
+  }
+
+  .membership__header h4 {
+    font-size: var(--text-2xl);
+  }
+
+  .membership__options > button {
+    max-width: 420px;
+  }
+
+  .membership__options button svg {
+    width: 30%;
+  }
+  }
+}
+
+@media (min-width: 1440px) {
+  .membership__options button p {
+    font-size: var(--text-1xl);
+  }
+
+}
+
+@media (min-width: 2560px) {
+
+   .membership__panel {
+    max-width: 40%;
+    left: 30%;
+  }
+
+}

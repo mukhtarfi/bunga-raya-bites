@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+html {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-black);
+}
+
+:root {
+    /* standard color */
+    --primary-black : #000000;
+    --secondary-green : #59CE8F;
+    --tertiary-white : #E8F9FD;
+    --black-shade:  rgb(0, 0, 0, 0.5);
+    --quaternary-lily: #EDF1D6;
+    
+    /* font sizes */
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+    --text-6xl: 3.75rem;
+    --text-7xl: 4.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--tertiary-white);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Utilites */
+.underline {
+    /* For underline under the navigation words. come from in and out */
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(var(--tertiary-white), var(--tertiary-white));
+    background-size: 0 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
+}
+
+.underline:hover {
+    background-size: 100% 2px;
+    background-position: 0 100%;
+}
